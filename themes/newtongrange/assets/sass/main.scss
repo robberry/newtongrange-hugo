@@ -1,0 +1,30 @@
+$templateColour: blue;
+$fa-font-path: "/assets/webfonts";
+
+// functions.scss - Bootstrap functions
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/mixins";
+
+// your variables + overrides of Bootstrap variables 
+@import "user/user-variables"; 
+
+// custom variables + overrides of Bootstrap variables for this theme
+@import "custom/variables";
+@import "custom/utilities";
+
+// bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// fontawesome
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// 3rd party plugin variables
+@import "custom/variables-3rd-party.scss";
+
+// theme components
+@import "custom/theme";
+// your components
+@import "styles.scss";

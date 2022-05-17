@@ -1,0 +1,44 @@
+BaseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Newton Grange'
+theme = 'newtongrange'
+
+googleAnalytics = "UA-1511XXXX-X"
+enableRobotsTXT = true
+
+sectionPagesMenu = "main"
+
+[menu]
+[[menu.main]]
+    identifier = "services"
+    name = "services"
+    title = "Services"
+    url = "/services/"
+    weight = 200
+[[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "Blog"
+    url = "/blog/"
+    weight = 300
+
+[module]
+    [[module.mounts]]
+        source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        target = "assets/js/bootstrap.bundle.min.js"
+    [[module.mounts]]
+        source = "node_modules/jquery/dist/jquery.min.js"
+        target = "assets/js/jquery.min.js"
+    [[module.mounts]]
+        source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+        target = "static/assets/webfonts"
+
+[params]
+    author = "Rachael Berry"
+    description = "This is an awesome Hugo Bootstrap site"
+    logo = "https://www.mywebsite.com/images/logo.png"
+    images = ["/images/site-feature-image.jpg"]
+
+[frontmatter]
+    date = ["date", "publishDate", "lastmod"]
+    lastmod = ["lastmod", ":fileModTime", ":default"]

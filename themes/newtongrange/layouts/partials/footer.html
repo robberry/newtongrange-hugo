@@ -1,0 +1,24 @@
+
+<footer class="footer fixed-bottom bg-dark">
+
+    <div class="row footer-text">
+      <div class="col-12 col-md text-center text-md-left nav-link text-white">© My Organisation - 2020 All rights reserved.</div>
+      <div class="col-12 text-center text-white">Name: {{ .Name }},&nbsp;&nbsp;
+        Kind: {{ .Kind }},&nbsp;&nbsp;
+        Type: {{ .Type }},&nbsp;&nbsp;
+        List Page: .Pages,&nbsp;&nbsp;
+        IsPage: {{ .IsPage }},&nbsp;&nbsp;
+        IsHome: {{ .IsPage }},&nbsp;&nbsp;
+        Next: {{ .Next }},&nbsp;&nbsp;
+        Prev: {{ .Prev }},&nbsp;&nbsp;
+        Section: {{ .CurrentSection }}</div>
+    </div>
+
+  <!-- JavaScript and dependencies -->
+  {{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+  {{ $js_footer := slice $bootstrap | resources.Concat "assets/js/bundle.js" | resources.Minify | resources.Fingerprint "sha256" }}
+  <script src="{{$js_footer.RelPermalink}}" integrity="{{ $js_footer.Data.Integrity }}" defer></script>
+
+  {{ template "_internal/google_analytics_async.html" . }}
+
+</footer>
