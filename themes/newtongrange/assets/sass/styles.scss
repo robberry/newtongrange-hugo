@@ -13,3 +13,36 @@ body {
     height: 70vh;
     min-height: 600px;
 }
+
+.btn {
+  letter-spacing: 0em;
+  text-transform: Uppercase;
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.025rem;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link.dropdown-toggle {
+    padding-right: 1.9rem;
+}
+
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}

@@ -10,10 +10,10 @@ sectionPagesMenu = "main"
 
 [menu]
 [[menu.main]]
-    identifier = "services"
-    name = "services"
-    title = "Services"
-    url = "/services/"
+    identifier = "explore"
+    name = "explore"
+    title = "Explore"
+    url = "/explore/"
     weight = 200
 [[menu.main]]
     identifier = "blog"

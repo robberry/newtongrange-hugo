@@ -1,35 +1,49 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+
+<header class="blog-header lh-1 py-3">
   <div class="container">
-    <a class="navbar-brand" href="/">Newton Grange</a>
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a href="/"><img src="/assets/img/ng-logo-wide-lightgreen-logosite-250px.jpg"></a>
+      </div>
+      <div class="col-8 d-flex justify-content-end align-items-center">
+        <ul class="list-inline align-items-center mb-0">
+          <li class="list-inline-item"><a class="btn btn-primary btn-outline" href="#"><i class="fa-solid fa-phone pe-1"></i> Contact us</a></li>
+          <li class="list-inline-item"><a class="btn btn-primary btn-outline" href="#"><i class="fa-solid fa-suitcase pe-1"></i> Book now</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
+      <ul class="navbar-nav mx-auto">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
-      </li>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main.ByWeight }}
-        {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a class='nav-link dropdown-toggle' href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ .Title }}
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            {{ range .Children }}
-              <li><a class='dropdown-item' href="{{ .URL }}">{{ .Title }}</a></li>
-            {{ end }}
-            </ul> 
-          </li>
-        {{ else }}
-        <li class="nav-item">
-
-          <a class='nav-link' href="{{ .URL }}">{{ .Title }}</a>
+      </li> -->
+    
+        <li class="nav-item dropdown">
+          <a class='nav-link dropdown-toggle' href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cottages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class='dropdown-item' href="/cottages/entry">Entry</a></li>
+          </ul> 
         </li>
-        {{ end }}
-      {{ end }}
-      <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">&nbsp;&nbsp;<a class="btn btn-primary" href="user-add-0.html">Book now</a></li>
+        <li class="nav-item">
+          <a class='nav-link' href="/explore">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link' href="/blog">Blog</a>
+        </li>
+      <li class="nav-item">
+        <a class='nav-link' href="/location">Location</a>
+      </li>
     </ul>
   </div>
 </nav>
+
