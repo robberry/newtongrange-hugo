@@ -1,4 +1,4 @@
-BaseURL = 'http://example.org/'
+BaseURL = 'https://newtongrange.netlify.app'
 languageCode = 'en-us'
 title = 'Newton Grange'
 theme = 'newtongrange'
